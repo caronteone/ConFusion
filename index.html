@@ -34,9 +34,9 @@
 
         </ul>
         <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
+            <button type="button" id="loginButton">
                 <span class="fa fa-sign-in"></span>Login
-            </a>
+            </button>
         </span>
       </div>
 
@@ -49,14 +49,14 @@
 
     <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header modal-header-var ">
                 <h4 class="modal-title">Login</h4>
-                <button type="button" class="close" data-dismiss="modal">
+                <button type="button" class="close modal-close-button-var" data-dismiss="modal">
                     &times;
                 </button>
 
             </div>
-            <div class="modal-body">
+            <div class="modal-body modal-body-pale">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -98,23 +98,24 @@
                         <img src="./img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-3 col-sm align-self-center">
-                        <a class="btn btn-sm btn-block nav-link btn-warning"
-                        data-toggle="modal" data-target="#reservationModal"> Reserve Table </a>
+                        <button type="button" class="btn btn-sm btn-block nav-link btn-warning"
+                        id="buttonReserve"
+                        > Reserve Table </Button>
                         
                         <div id="reservationModal" class="modal fade" role="dialog">
                             <div class="modal-dialog">
 
                             
                             <div class="modal-content">
-                                <div class="modal-header">
-                                <h4 class="modal-title" style="color:black;">Reserve Table</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <div class="modal-header modal-header-var">
+                                <h4 class="modal-title" >Reserve Table</h4>
+                                <button type="button" class="close modal-close-button-var" data-dismiss="modal">&times;</button>
                                 
                                 </div>
-                                <div class="modal-body">
-                                <div class="card">
-                        <h3 class="card-header bg-warning text-white">Facts At a Glance</h3>
-                        <div class="card-body">
+                                <div class="modal-body modal-body-pale">
+                                
+                        
+                     
                         <div class="row">
                             <p class="col-sm-3 col-xm-12" style="color:black;">Number of Guests</p>
                             <div class="col-sm-6 offset-sm-1 col-xm-12">
@@ -141,6 +142,7 @@
                                   </form>
                         </div>   
                     </div>
+                                
                     <div class="row">
                             <p class="col-sm-3 col-xm-12" style="color:black;">Section</p>
                             <div class="col-sm-6 offset-sm-1 col-xm-12">
@@ -173,11 +175,14 @@
                                         Reserve
                                     </button>
                                   </div>
+                    </div>
                                 
                                         
                         </div>
                 </div>
             </div>
+        </div>
+    </div>
                                 
 
                             </div>
@@ -371,6 +376,20 @@
                 
             });
         })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#buttonReserve").click(function(){
+                $("#reservationModal").modal("toggle");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#loginButton").click(function(){
+                $("#loginModal").modal("toggle");
+            });
+        });
     </script>
 
 </body>
