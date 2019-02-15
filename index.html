@@ -8,10 +8,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <!-- endbuild -->
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -23,7 +25,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target ="#Navbar" >
       <span class="navbar-toggler-icon"></span>
     </button>
-      <a class="navbar-brand mr-auto" href="#"> <img src="./img/logo.png" height="30" width="41" ></a>
+      <a class="navbar-brand mr-auto" href="#"> <img src="./img/logo.png" alt="Smiley face" height="30" width="41" ></a>
       <div class="collapse navbar-collapse" id="Navbar">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home </a></li>
@@ -47,7 +49,7 @@
 
   <div id="loginModal" class="modal fade" role="dialog">
 
-    <div class="modal-dialog modal-lg" role="content">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header modal-header-var ">
                 <h4 class="modal-title">Login</h4>
@@ -95,7 +97,7 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-3 col-sm align-self-center">
-                        <img src="./img/logo.png" class="img-fluid">
+                        <img src="./img/logo.png" alt="Smiley face" class="img-fluid">
                 </div>
                 <div class="col-3 col-sm align-self-center">
                         <button type="button" class="btn btn-sm btn-block nav-link btn-warning"
@@ -148,23 +150,23 @@
                             <div class="col-sm-6 offset-sm-1 col-xm-12">
                                     <div class="btn-group btn-group-toggle btn-sm" data-toggle="buttons">
                                             <label class="btn btn-success active">
-                                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-smocking
+                                              <input type="radio" name="options" id="option1"  checked> Non-smocking
                                             </label>
                                             <label class="btn btn-danger">
-                                              <input type="radio" name="options" id="option2" autocomplete="off"> Smockers
+                                              <input type="radio" name="options" id="option2" > Smockers
                                             </label>
                                             
                                           </div>
 
                     </div>
-                        <div id="reservations" class="form-group row">
-                            <label for="reservations" class="col-sm-4 col-xm-3 col-form-label" style="color:black;">Date and Time</label>
+                        <div  class="form-group row">
+                            <label  class="col-sm-4 col-xm-3 col-form-label" style="color:black;">Date and Time</label>
                             <div class="col-sm-3 col-xm-5">
-                                <input type="text" class="form-control" id="Date" name="Date"
+                                <input type="text" class="form-control" name="Date"
                                        placeholder="Date" />
                             </div>
                             <div class="col-sm-3 col-xm-5">
-                                <input type="text" class="form-control" id="time" name="time"
+                                <input type="text" class="form-control" name="time"
                                        placeholder="Time" />
                             </div>
                             
@@ -187,10 +189,6 @@
 
                             </div>
                             </div>
-                        
-                </div>
-            </div>
-        </div>
     </header>
 
     <div class="container">
@@ -200,7 +198,7 @@
                             <div class="carousel-inner" role="listbox">
         
                                 <div class="carousel-item active">
-                                    <img class="d-block img-fluid" src="img/uthappizza.png" alt="uthappizza">
+                                    <img class="d-block img-fluid"  src="img/uthappizza.png" alt="uthappizza">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h2>Uthappizza <span class="badge badge-danger"
                                             >HOT</span> <span class="badge badge-pill badge-default">4,49$</span></h2>
@@ -275,6 +273,7 @@
                         </div>
                     
             </div>
+        </div>
         </div>
 
 
@@ -352,13 +351,15 @@
                 </div>
            </div>
         </div>
+   
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
     <script src="js/scripts.js"></script>
+    <!-- endbuild -->
 
 </body>
 
