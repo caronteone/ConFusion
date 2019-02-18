@@ -21,6 +21,7 @@
   "devDependencies": {
     "cssmin": "^0.4.3",
     "htmlmin": "0.0.7",
+    "imagemin": "^6.1.0",
     "lite-server": "^2.3.0",
     "node-sass": "^4.11.0",
     "onchange": "^3.3.0",
@@ -32,6 +33,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
+    "copyfiles": "^2.1.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6"
